@@ -1,0 +1,26 @@
+body{
+    margin: 0% auto;
+    padding:0% auto;
+    box-sizing: border-box;
+    background-color: azure;
+}
+
+
+form{
+    background-color: rgba(241, 203, 169, 0.449);
+    margin-top: 180px;
+    margin-left: 550px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 400px;
+    height:370px;
+    padding-left: 10px;
+}
+input{
+    width: 200px;
+    height: 25px;
+}
+#btn a{
+    text-decoration-line: none;
+    color: black;
+}

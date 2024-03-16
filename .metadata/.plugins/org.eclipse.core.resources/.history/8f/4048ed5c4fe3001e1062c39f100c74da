@@ -1,0 +1,27 @@
+package com.GKB.KHBLabs;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class KhbLabsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(KhbLabsApplication.class, args);
+		
+	}
+
+	@Configuration
+	public class CorsConfig implements WebMvcConfigurer {
+    
+    	@Override
+    	public void addCorsMappings(CorsRegistry registry) {
+        	registry.addMapping("/**")
+                	.allowedOrigins("http://localhost:3000") // Frontend URL
+                	.allowedMethods("GET", "POST", "PUT", "DELETE")
+                	.allowCredentials(true);
+    }
+}
+
+
+}
